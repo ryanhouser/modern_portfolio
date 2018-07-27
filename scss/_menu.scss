@@ -11,7 +11,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -42,7 +42,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.98;
   visibility: hidden;
 
   &.show {
@@ -86,19 +86,16 @@
     }
 
     .portrait {
-      width: 250px;
-      height: 250px;
-      background: url('../img/profile.jpg');
-      background-position: center;
-      background-size: cover;
-      border-radius: 50%;
-      border: solid 3px $secondary-color;
+      @include profileImg(250px, 250px);
     }
   }
 
   .nav-item {
     transform: translate3d(600px, 0, 0);
     @include easeOut;
+    display: block;
+    width: 100%;
+    text-align: center;
 
     &.show {
       // slide in from right
@@ -106,7 +103,7 @@
     }
 
     &.active > a {
-      color: $secondary-color;
+      background: $secondary-color;
     }
   }
 
@@ -117,12 +114,15 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
+    width: 100%;
     @include easeOut;
 
     &:hover {
-      color: $secondary-color;
+      
+      background: $secondary-color;
+      width: 100%;
     }
   }
 }

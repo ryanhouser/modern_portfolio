@@ -29,6 +29,25 @@ $background-opacity: 0.9;
   }
 }
 
+@mixin profileImg($width, $height) {
+  width: $width;
+  height: $height;
+  background: url('../img/profile.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  border: solid 3px $secondary-color;
+}
+
+// set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
 // media query mixins
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
