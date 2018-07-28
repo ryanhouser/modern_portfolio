@@ -1,7 +1,6 @@
 @import "config";
 @import "menu";
 
-
 * {
   box-sizing: border-box;
 }
@@ -78,9 +77,9 @@ main {
 
 .about-info {
   display: grid;
-  grid-template-areas: 
-  'bioimage bio bio'
-  'job1 job2 job3';
+  grid-template-areas:
+    "bioimage bio bio"
+    "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 
@@ -89,29 +88,73 @@ main {
     margin: auto;
     grid-area: bioimage;
   }
-  
+
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
   }
-  
+
   .job-1 {
     grid-area: job1;
   }
-  
+
   .job-2 {
     grid-area: job2;
   }
-  
+
   .job-3 {
     grid-area: job3;
   }
-  
+
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
+}
+
+//projects
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+
+  img {
+    width: 100%;
+    border: 3px solid #fff;
+
+    &:hover {
+      border: 3px solid $secondary-color;
+      opacity: 0.5;
+      @include easeOut;
+    }
+  }
+}
+
+// button styles
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin: 0.3rem;
+
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+    @include easeOut;
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: #333;
 }
 
 #main-footer {
@@ -121,6 +164,5 @@ main {
   color: set-text-color($primary-color);
   height: 60px;
 }
-
 
 @import "mobile";
