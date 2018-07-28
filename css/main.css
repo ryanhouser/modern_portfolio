@@ -59,7 +59,7 @@
       background-position: center;
       background-size: cover;
       border-radius: 50%;
-      border: solid 3px #0099ff; }
+      border: solid 3px pink; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out;
@@ -69,7 +69,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.active > a {
-      background: #0099ff; }
+      background: pink; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -82,7 +82,7 @@
     width: 100%;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      background: #0099ff;
+      background: pink;
       width: 100%; }
 
 .nav-item:nth-child(1) {
@@ -147,7 +147,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #0099ff; }
+  color: pink; }
 
 main {
   padding: 4rem;
@@ -158,7 +158,7 @@ main {
       padding: 0.4rem;
       color: #fff; }
       main .icons a:hover {
-        color: #0099ff;
+        color: pink;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -177,7 +177,7 @@ main {
     background-position: center;
     background-size: cover;
     border-radius: 50%;
-    border: solid 3px #0099ff;
+    border: solid 3px pink;
     margin: auto;
     grid-area: bioimage; }
   .about-info .bio {
@@ -192,7 +192,7 @@ main {
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #0099ff 5px solid; }
+    border-bottom: pink 5px solid; }
 
 .projects {
   display: grid;
@@ -202,7 +202,7 @@ main {
     width: 100%;
     border: 3px solid #fff; }
     .projects img:hover {
-      border: 3px solid #0099ff;
+      border: 3px solid pink;
       opacity: 0.5;
       transition: all 0.5s ease-out; }
 
@@ -212,7 +212,7 @@ main {
   border: 0;
   margin: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #0099ff;
+    background: pink;
     color: #000;
     transition: all 0.5s ease-out; }
 
@@ -238,7 +238,7 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #0099ff;
+      background: pink;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
